@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DOCKER_IMAGE_NAME=ngirc
+DOCKER_IMAGE_NAME=geekduck/ngirc
 DOCKER_TAG=1.0
 DOCKER_CONTAINER_NAME=ngirc
 

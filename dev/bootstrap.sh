@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DOCKER_IMAGE_NAME=dev
+DOCKER_IMAGE_NAME=geekduck/dev
 DOCKER_TAG=1.0
 DOCKER_CONTAINER_NAME=dev
 
