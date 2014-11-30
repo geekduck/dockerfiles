@@ -6,6 +6,6 @@ DOCKER_CONTAINER_NAME=dev
 
 docker build -t $DOCKER_IMAGE_NAME:$DOCKER_TAG .
 
-docker run --name $DOCKER_CONTAINER_NAME \
+docker run -d --name $DOCKER_CONTAINER_NAME \
   -p 610022:22 \
   $DOCKER_IMAGE_NAME:$DOCKER_TAG
