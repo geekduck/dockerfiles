@@ -9,5 +9,5 @@ docker build -t $DOCKER_IMAGE_NAME:$DOCKER_TAG .
 docker run -d --name $DOCKER_CONTAINER_NAME \
   -v /etc/localtime:/etc/localtime:ro \
   -v /data/gitbucket:/root/.gitbucket \
-  -p 8081:8080 -p 29418:29418 \
+  -p 29418:29418 \
   $DOCKER_IMAGE_NAME:$DOCKER_TAG
