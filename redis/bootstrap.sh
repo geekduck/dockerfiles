@@ -8,5 +8,5 @@ docker run -d --name $DOCKER_CONTAINER_NAME \
   -p 6379:6379 \
   -v /etc/localtime:/etc/localtime:ro \
   -v /etc/timezone:/etc/timezone:ro \
-  -v /data/redis:/data \
+  -v `pwd`/data:/data \
   $DOCKER_IMAGE_NAME:$DOCKER_TAG
