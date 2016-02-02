@@ -4,7 +4,7 @@ MAINTAINER geekduck
 WORKDIR /root
 
 # download gitbucket
-RUN wget https://github.com/gitbucket/gitbucket/releases/download/3.10.1/gitbucket.war
+RUN wget https://github.com/gitbucket/gitbucket/releases/download/3.11/gitbucket.war
 
 EXPOSE 8080 29418
 
