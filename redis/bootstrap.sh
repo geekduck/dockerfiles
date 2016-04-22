@@ -1,7 +1,7 @@
 #!/bin/sh
 
 DOCKER_IMAGE_NAME=redis
-DOCKER_TAG=latest
+DOCKER_TAG=alpine
 DOCKER_CONTAINER_NAME=redis
 
 docker run -d --name $DOCKER_CONTAINER_NAME \

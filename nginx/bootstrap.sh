@@ -1,7 +1,7 @@
 #!/bin/sh
 
 DOCKER_IMAGE_NAME=nginx
-DOCKER_TAG=latest
+DOCKER_TAG=alpine
 DOCKER_CONTAINER_NAME=nginx
 
 docker run -d --name $DOCKER_CONTAINER_NAME \
