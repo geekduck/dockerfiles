@@ -1,4 +1,4 @@
-FROM java:latest
+FROM java:alpine
 MAINTAINER geekduck
 
 WORKDIR /root
