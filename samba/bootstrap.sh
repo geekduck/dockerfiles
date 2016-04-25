@@ -10,7 +10,6 @@ docker run -it -d --name $DOCKER_CONTAINER_NAME \
   -p 137:137 \
   -p 139:139 \
   -p 445:445 \
-  -v samba_volume:/etc/samba \
   -v /var/data:/mnt \
   $DOCKER_IMAGE_NAME:$DOCKER_TAG \
   -u "`whoami`;`whoami`" \
