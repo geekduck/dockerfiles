@@ -1,7 +1,7 @@
 #!/bin/sh
 
 DOCKER_IMAGE_NAME=jenkins
-DOCKER_TAG=latest
+DOCKER_TAG=2.3
 DOCKER_CONTAINER_NAME=jenkins
 
 docker run -d --name $DOCKER_CONTAINER_NAME \
