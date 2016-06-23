@@ -11,6 +11,7 @@ docker run -it -d --name $DOCKER_CONTAINER_NAME \
   -p 139:139 \
   -p 445:445 \
   -v /var/data:/mnt \
+  -v `pwd`/data:/etc/samba \
   $DOCKER_IMAGE_NAME:$DOCKER_TAG \
   -u "`whoami`;`whoami`" \
   -s "public;/mnt/public;no;no;yes" \
