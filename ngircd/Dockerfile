@@ -1,10 +1,9 @@
-FROM ubuntu:14.04
+FROM alpine:latest
 MAINTAINER geekduck
 
-RUN apt-get -yq update
-
-# install irc
-RUN apt-get install -y ngircd
+RUN apk update \
+    && apk add ngircd \
+    && rm -rf /var/cache/apk/*
 
 # Add ngircd conf
 ADD conf/ngircd.conf /etc/ngircd/ngircd.conf
