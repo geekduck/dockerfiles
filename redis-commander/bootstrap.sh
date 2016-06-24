@@ -4,8 +4,6 @@ DOCKER_IMAGE_NAME=geekduck/redis-commander
 DOCKER_TAG=latest
 DOCKER_CONTAINER_NAME=redis-commander
 
-docker build -t $DOCKER_IMAGE_NAME:$DOCKER_TAG .
-
 docker run -d --name $DOCKER_CONTAINER_NAME \
   -p 8082:8081 \
   -v /etc/localtime:/etc/localtime:ro \
