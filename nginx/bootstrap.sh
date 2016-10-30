@@ -12,4 +12,5 @@ docker run -d --name $DOCKER_CONTAINER_NAME \
   -v `pwd`/conf/conf.d:/etc/nginx/conf.d:ro \
   --link jenkins:jenkins \
   --link gitbucket:gitbucket \
+  --link drone:drone \
   $DOCKER_IMAGE_NAME:$DOCKER_TAG
