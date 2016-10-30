@@ -1,0 +1,2 @@
+REMOTE_DRIVER=gitlab
+REMOTE_CONFIG=http://${GITLAB_URL}?client_id=${GITLAB_APP_ID}2&client_secret=${GITLAB_APP_SECRET}
