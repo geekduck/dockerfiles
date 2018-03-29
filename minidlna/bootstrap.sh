@@ -9,6 +9,4 @@ docker run -d --name $DOCKER_CONTAINER_NAME \
   -v /etc/localtime:/etc/localtime:ro \
   -v /etc/timezone:/etc/timezone:ro \
   -v "$MEDIA_VIDEO_DIR":/opt/Videos \
-  -p 8200:8200 \
-  -p 1900:1900/udp \
   $DOCKER_IMAGE_NAME:$DOCKER_TAG
